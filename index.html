@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forajidos Culture</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="source/logo3.png" alt="Baggy Culture Logo">
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/forajidosculture?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                    <img src="source/instagram.png" alt="Instagram Logo">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="filter-and-search">
+            <div class="categories-inline">
+                <label for="category-select"><strong>Categoría:</strong></label>
+                <select id="category-select">
+                    <option value="all">Mostrar todo</option>
+                    <option value="Street Wear">Street Wear</option>
+                    <option value="Famosos">Famosos</option>
+                    <option value="Marcas">Marcas</option>
+                    <option value="Autos">Autos</option>
+                </select>
+            </div>
+            <div class="search-bar-inline">
+                <input type="text" placeholder="Buscar">
+                <button>
+                    <img src="source/buscar1.png" alt="Search">
+                </button>
+            </div>
+        </div>
+
+        <!-- Galería de imágenes -->
+        <div class="image-gallery">
+            <!-- Tarjetas de playeras -->
+            <div class="image-card" data-category="Autos">
+                <img src="source/prenda1.png" alt="Autos 1" class="clickable-image">
+                <p>NissanSilva</p>
+            </div>
+            <div class="image-card" data-category="Autos">
+                <img src="source/prenda2.png" alt="Autos 2" class="clickable-image">
+                <p>NissanSkyline</p>
+            </div>
+            <div class="image-card" data-category="Autos">
+                <img src="source/prenda3.png" alt="Autos 3" class="clickable-image">
+                <p>ToyotaSupra</p>
+            </div>
+            <div class="image-card" data-category="Street Wear">
+                <img src="source/prenda9.png" alt="Streetwear 1" class="clickable-image">
+                <p>Narcotic</p>
+            </div>
+            <div class="image-card" data-category="Street Wear">
+                <img src="source/prenda10.png" alt="Streetwear 2" class="clickable-image">
+                <p>DemonClaws</p>
+            </div>
+            <div class="image-card" data-category="Street Wear">
+                <img src="source/prenda11.png" alt="Streetwear 2" class="clickable-image">
+                <p>DeathPower</p>
+            </div>
+            <div class="image-card" data-category="Famosos">
+                <img src="source/prenda7.png" alt="Famosos 2" class="clickable-image">
+                <p>Drake</p>
+            </div>
+            <div class="image-card" data-category="Famosos">
+                <img src="source/prenda8.png" alt="Famosos 2" class="clickable-image">
+                <p>BlackPink</p>
+            </div>
+            <div class="image-card" data-category="Famosos">
+                <img src="source/prenda6.png" alt="Famosos 3" class="clickable-image">
+                <p>PostMalone</p>
+            </div>
+        </div>
+
+        <!-- Modal para imagen ampliada -->
+        <div id="image-modal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content-container">
+                <div id="modal-title" class="modal-title"></div>
+                <img class="modal-content" id="modal-image">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
